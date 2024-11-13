@@ -44,7 +44,7 @@ export const SignUp = () => {
         email: email,
       });
       Swal.fire("Yeyyyyy akunnya dah jadi");
-      router.push("/dashboard");
+      router.push("/");
     } catch (err) {
       Swal.fire("Coba lagi abang ada yg salah");
     }
@@ -66,7 +66,7 @@ export const SignUp = () => {
         { merge: true },
       );
       Swal.fire("Yeyyyyy akunnya dah jadi");
-      router.push("/dashboard");
+      router.push("/");
     } catch (err) {
       Swal.fire("Coba lagi abang ada yg salah");
     }

@@ -24,7 +24,7 @@ export const SignIn = () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       Swal.fire("Alhamdulillah Login");
-      router.push("/dashboard");
+      router.push("/");
     } catch (err) {
       Swal.fire("Ga ada akun woy");
     }
@@ -39,7 +39,7 @@ export const SignIn = () => {
       const userDoc = await getDoc(doc(db, "users", user.uid));
       if (userDoc.exists()) {
         Swal.fire("Alhamdulillah Login");
-        router.push("/dashboard");
+        router.push("/");
       } else {
         Swal.fire("Eh akunnya ga ada wey");
       }
