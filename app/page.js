@@ -1,8 +1,16 @@
 import { Navbar } from "@/components/Navbar";
-import Image from "next/image";
+import Footer from "@/components/Footer";
+import ProfilePage from "@/components/ProfilePage";
 
 export default function Home() {
   return (
-    <Navbar/>
+    <>
+    <main className="flex flex-col">
+
+      <Navbar />
+      <ProfilePage/>
+      <Footer />
+    </main>
+    </>
   );
 }

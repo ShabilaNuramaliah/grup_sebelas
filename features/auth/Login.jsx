@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { auth, db } from "@/config/firebase";
+import {auth, db} from "@/config/firebase"
 import {
   signInWithEmailAndPassword,
   GoogleAuthProvider,
@@ -130,7 +130,7 @@ export const SignIn = () => {
           </button>
 
           <p className="mt-4 text-center">
-            Don't have an account?{" "}
+            Don{"'"}t have an account?{" "}
             <Link href="/signup" className="text-blue-500">
               Sign up
             </Link>
