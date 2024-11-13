@@ -64,8 +64,8 @@ export const SignIn = () => {
 
   return (
     <div className="flex min-h-screen bg-white gap-6 w-screen items-center justify-center">
-      <div className="flex flex-col justify-center w-[40%]">
-        <div className="flex flex-col px-16 py-10 text-black">
+      <div className="flex flex-col justify-center w-full md:w-[40%]">
+        <div className="flex flex-col px-16 py-6 md:py-10 text-black">
           <h1 className="text-3xl font-bold mb-2 text-center">Welcome Back</h1>
           <p className="mb-6 text-center">
             Please sign in to access your account.
@@ -124,6 +124,7 @@ export const SignIn = () => {
               alt="Google icon"
               width={20}
               height={20}
+              objectFit="cover"
             />
             Sign In with Google
           </button>
@@ -136,7 +137,7 @@ export const SignIn = () => {
           </p>
         </div>
       </div>
-      <div className="flex">
+      <div className="hidden md:flex">
         <Image
           src="/res/sas.png"
           alt="Car"

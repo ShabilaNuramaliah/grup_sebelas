@@ -77,7 +77,7 @@ export const SignUp = () => {
       className="flex min-h-screen
      bg-white gap-6 w-screen items-center justify-center  "
     >
-      <div className="flex">
+      <div className="hidden md:flex">
         <Image
           src="/res/sas.png"
           alt="Car"
@@ -88,7 +88,7 @@ export const SignUp = () => {
           className="rounded-sm"
         />
       </div>
-      <div className="flex flex-col  justify-center w-[40%]  ">
+      <div className="flex flex-col  justify-center w-full md:w-[40%]  ">
         <div className="flex flex-col  px-16 py-10 text-black  ">
           <h1 className="text-3xl font-bold mb-2 text-center">Welcome</h1>
           <p className="mb-6 text-center">
