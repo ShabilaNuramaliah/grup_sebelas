@@ -1,15 +1,15 @@
-"use client"
-import { useRouter } from 'next/navigation';
-import Dashboard from '@/components/Dash';
+import { Navbar } from "@/components/Navbar";
+import Dashboard from "@/components/Dash";
+import Footer from "@/components/Footer";
 
-export default function Home() {
-  const router = useRouter();
-
-  const handleClick = () => {
-    router.push('/cars/AllCar'); 
-  };
-
+export default function Dassboard(){
   return (
-    <Dashboard/>
-  );
+    <>
+    <main className="flex flex-col">
+      <Navbar />
+      <Dashboard/>
+      <Footer />
+    </main>
+    </>
+  )
 }

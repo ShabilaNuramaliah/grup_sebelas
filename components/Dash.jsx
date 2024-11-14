@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import { Clock, Award, ShieldCheck, Phone, Mail, MapPin } from "lucide-react";
 import { useRouter } from 'next/navigation';
@@ -48,7 +50,7 @@ export default function Dashboard() {
   ];
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen mt-3">
       {/* Pertama */}
       <section className="relative px-4 py-16 md:py-24 bg-white">
         <div className="container mx-auto flex flex-col md:flex-row items-center">
@@ -148,30 +150,9 @@ export default function Dashboard() {
           <h2 className="text-3xl font-bold mb-12 text-center">
             Apa Kata Mereka?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-sm hover-scale"
-              >
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full"></div>
-                  <div className="ml-4">
-                    <h3 className="font-semibold">{testimonial.name}</h3>
-                    <div className="flex items-center text-yellow-400">
-                      <span>★</span>
-                      <span className="ml-1 text-gray-700">
-                        {testimonial.rating}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-gray-600">{testimonial.review}</p>
-              </div>
-            ))}
-          </div>
+         
         </div>
-        <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory hide-scrollbar">
+        <div className="flex gap-10 overflow-x-auto snap-x snap-mandatory hide-scrollbar">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
@@ -223,13 +204,6 @@ export default function Dashboard() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-black py-4">
-        <p className="text-center text-white text-sm sm:text-base md:text-lg">
-          © 2024 Wheels4u. All Rights Reserved
-        </p>
-      </footer>
     </main>
   );
 }
