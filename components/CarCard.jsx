@@ -1,5 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const CarCard = ({ car }) => {
   const router = useRouter();
@@ -7,11 +8,14 @@ const CarCard = ({ car }) => {
   const handleDetailClick = () => {
     router.push(`/cars/${car.name.toLowerCase().replace(" ", "-")}`);
   };
+
   return (
     <div className="border border-gray-300 rounded-lg p-4 text-center shadow-lg transition-transform duration-200 transform hover:scale-105">
-      <img
+      <Image
         src={`/cars/${car.name.toLowerCase().replace(" ", "-")}.jpg`}
         alt={car.name}
+        width={400}
+        height={192}
         className="w-full h-48 object-cover border-b border-gray-300 mb-4"
       />
 
@@ -21,26 +25,32 @@ const CarCard = ({ car }) => {
         </div>
         <div className="flex justify-start space-x-4 mb-5">
           <div className="flex items-center text-sm">
-            <img
+            <Image
               src="/icon/Automation.svg"
               alt="Automation"
-              className="w-4 h-4 mr-2"
+              width={16}
+              height={16}
+              className="mr-2"
             />
             <p>{car.transmission}</p>
           </div>
           <div className="flex items-center text-sm">
-            <img
+            <Image
               src="/icon/Living Room.svg"
               alt="Living Room"
-              className="w-4 h-4 mr-2"
+              width={16}
+              height={16}
+              className="mr-2"
             />
             <p>{car.seats}</p>
           </div>
           <div className="flex items-center text-sm">
-            <img
+            <Image
               src="/icon/Star.svg"
               alt="Star"
-              className="w-4 h-4 mr-2"
+              width={16}
+              height={16}
+              className="mr-2"
             />
             <p>{car.rating}</p>
           </div>

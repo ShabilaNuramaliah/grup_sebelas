@@ -8,7 +8,7 @@ export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <nav className="flex items-center justify-between px-4 py-6 bg-white shadow-md">
+        <nav className="flex items-center justify-between px-4 py-2 bg-white shadow-md">
             <div className="flex items-center ml-4 md:ml-16">
                 <Image 
                     src="/logo.png" 
@@ -19,7 +19,7 @@ export const Navbar = () => {
                 />
             </div>
 
-            <div className="hidden md:flex items-center space-x-12 text-gray-700 font-medium text-[20px] mr-16">
+            <div className="hidden md:flex items-center space-x-12 text-gray-700 font-medium text-[16px] mr-16">
                 <Link href="/" className="hover:text-teal-600 font-bold">Home</Link>
                 <Link href="/about" className="hover:text-teal-600 font-bold">About</Link>
                 <Link href="/contact" className="hover:text-teal-600 font-bold">Contact Us</Link>

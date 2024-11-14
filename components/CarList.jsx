@@ -19,7 +19,7 @@ const CarList = () => {
 
   return (
     <div>
-      <SearchBar onSearch={handleSearch} onLocationChange={handleSearch} />
+      <SearchBar onSearch={handleSearch} onLocationChange={handleSearchs} />
       <div>
         {filteredCars.length > 0 ? (
           filteredCars.map((car) => (
