@@ -113,7 +113,7 @@ export default function Dashboard() {
       </section>
 
       {/* Ketiga About */}
-      <section className="py-16 bg-white">
+      <section id="About" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
@@ -177,7 +177,7 @@ export default function Dashboard() {
       </section>
 
       {/* Kelima Kontak */}
-      <section className="py-16 bg-white">
+      <section id="Contact" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
           <div className="text-center mb-8">

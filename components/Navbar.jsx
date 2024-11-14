@@ -21,8 +21,8 @@ export const Navbar = () => {
 
             <div className="hidden md:flex items-center space-x-12 text-gray-700 font-medium text-[16px] mr-16">
                 <Link href="/" className="hover:text-teal-600 font-bold">Home</Link>
-                <Link href="/about" className="hover:text-teal-600 font-bold">About</Link>
-                <Link href="/contact" className="hover:text-teal-600 font-bold">Contact Us</Link>
+                <Link href="#About" className="hover:text-teal-600 font-bold">About</Link>
+                <Link href="#Contact" className="hover:text-teal-600 font-bold">Contact Us</Link>
                 <Link href="/Profil" className="hover:text-teal-600 font-bold">Profil</Link>
                 <Link href="/login" className="bg-black text-white font-bold px-4 py-2 rounded-lg hover:bg-gray-800">
                     Login
@@ -42,8 +42,8 @@ export const Navbar = () => {
                 className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} absolute top-16 left-0 w-full bg-white shadow-md py-4 px-6 space-y-4`}
             >
                 <Link href="/" className="block text-gray-700 font-medium hover:text-teal-600">Home</Link>
-                <Link href="/about" className="block text-gray-700 font-medium hover:text-teal-600">About</Link>
-                <Link href="/contact" className="block text-gray-700 font-medium hover:text-teal-600">Contact Us</Link>
+                <Link href="#About" className="block text-gray-700 font-medium hover:text-teal-600">About</Link>
+                <Link href="#Contact" className="block text-gray-700 font-medium hover:text-teal-600">Contact Us</Link>
                 <Link href="/Profil" className="block text-gray-700 font-medium hover:text-teal-600">Contact Us</Link>
                 <Link href="/login" className="w-full bg-black text-white font-bold px-4 py-2 rounded-lg hover:bg-gray-800">
                     Login
